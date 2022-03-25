@@ -1,0 +1,152 @@
+:root {
+  --dark: #19283f;
+  --green: #33d1cc;
+  --red: #ff3150;
+  --yeallow: #ffc400;
+  --section-collor: #eff7fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red);
+  color: var(--yeallow);
+  padding: 0.5rem 1rem;
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start Navbar */
+
+.navbar {
+  background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green) !important;
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green);
+}
+
+.navbar .search svg {
+  color: var(--green);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  color: var(--green);
+}
+
+/* Start Landing */
+
+.landing {
+  background-color: var(--dark);
+  min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+
+/* Start Features */
+
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-collor);
+}
+
+.features .icon-holder .icon {
+  color: var(--green);
+}
+
+.features .feat h4 {
+  color: var(--yeallow);
+}
+/* End Features */
+/* Start Our Work */
+.our-work{
+  background-color: var(--section-collor);
+}
+
+.our-work ul .active{
+  background-color: var(--red);
+  color: var(--yeallow);
+}
+
+.our-work ul li{
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover{
+  color: var(--red);
+}
+
+.our-work .box{
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-work .box::before{
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgb(51 209 204 / 76%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  transition: .3s;
+  transform: translateX(calc(-100% + -5px));
+}
+
+.our-work .box:hover::before{
+  transform: translateX(0);
+}
+
+/* End Our Work */
+
+/* Start Stuff */
+.desription{
+  max-width: 500px;
+}
+/* End Stuff */
