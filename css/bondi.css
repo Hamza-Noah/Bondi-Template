@@ -150,3 +150,12 @@ body {
   max-width: 500px;
 }
 /* End Stuff */
+
+/* Start Team */
+.team h2{
+color: var(--yeallow);
+}
+.team .box h4{
+background-color: var(--green);
+}
+/* End Team */
