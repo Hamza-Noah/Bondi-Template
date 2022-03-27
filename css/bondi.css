@@ -3,7 +3,7 @@
   --green: #33d1cc;
   --red: #ff3150;
   --yeallow: #ffc400;
-  --section-collor: #eff7fa;
+  --section-color: #eff7fa;
 }
 
 * {
@@ -87,7 +87,7 @@ body {
 
 .features .icon-holder .number {
   font-size: 12rem;
-  color: var(--section-collor);
+  color: var(--section-color);
 }
 
 .features .icon-holder .icon {
@@ -100,7 +100,7 @@ body {
 /* End Features */
 /* Start Our Work */
 .our-work{
-  background-color: var(--section-collor);
+  background-color: var(--section-color);
 }
 
 .our-work ul .active{
@@ -152,6 +152,11 @@ body {
 /* End Stuff */
 
 /* Start Team */
+
+.team{
+  background-color: var(--section-color) !important;
+}
+
 .team h2{
 color: var(--yeallow);
 }
