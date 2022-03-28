@@ -164,3 +164,9 @@ color: var(--yeallow);
 background-color: var(--green);
 }
 /* End Team */
+
+/* Start Project */
+.project {
+  background-color: var(--dark-color);
+}
+/* End Project */
