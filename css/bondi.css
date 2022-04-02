@@ -99,31 +99,31 @@ body {
 }
 /* End Features */
 /* Start Our Work */
-.our-work{
+.our-work {
   background-color: var(--section-color);
 }
 
-.our-work ul .active{
+.our-work ul .active {
   background-color: var(--red);
   color: var(--yeallow);
 }
 
-.our-work ul li{
-  padding: .5rem 1rem;
+.our-work ul li {
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
-.our-work ul li:not(.active):hover{
+.our-work ul li:not(.active):hover {
   color: var(--red);
 }
 
-.our-work .box{
+.our-work .box {
   padding: 5px;
   overflow: hidden;
   position: relative;
 }
 
-.our-work .box::before{
+.our-work .box::before {
   content: attr(data-work);
   position: absolute;
   background-color: rgb(51 209 204 / 76%);
@@ -135,33 +135,33 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   color: white;
-  transition: .3s;
+  transition: 0.3s;
   transform: translateX(calc(-100% + -5px));
 }
 
-.our-work .box:hover::before{
+.our-work .box:hover::before {
   transform: translateX(0);
 }
 
 /* End Our Work */
 
 /* Start Stuff */
-.desription{
+.desription {
   max-width: 500px;
 }
 /* End Stuff */
 
 /* Start Team */
 
-.team{
+.team {
   background-color: var(--section-color) !important;
 }
 
-.team h2{
-color: var(--yeallow);
+.team h2 {
+  color: var(--yeallow);
 }
-.team .box h4{
-background-color: var(--green);
+.team .box h4 {
+  background-color: var(--green);
 }
 /* End Team */
 
@@ -170,3 +170,23 @@ background-color: var(--green);
   background-color: var(--dark-color);
 }
 /* End Project */
+
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* End Subscribe */
