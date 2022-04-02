@@ -173,7 +173,7 @@ body {
 
 /* Start Subscribe */
 .subscribe {
-  background-color: var(--yellow-color);
+  background-color: var(--yeallow);
 }
 .subscribe input[type="text"] {
   border: none;
@@ -186,7 +186,7 @@ body {
   color: white;
 }
 .subscribe input[type="submit"] {
-  background-color: var(--dark-color);
-  color: var(--yellow-color);
+  background-color: var(--dark);
+  color: var(--yeallow);
 }
 /* End Subscribe */
